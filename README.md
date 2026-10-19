@@ -15,7 +15,7 @@ actions.
 **Claude Code plugin**
 
 ```text
-/plugin marketplace add incline-ltd/coding-agent-guidelines
+/plugin marketplace add ashishkaloge/coding-agent-guidelines
 /plugin install coding-agent-guidelines@coding-agent-guidelines
 ```
 
@@ -25,7 +25,7 @@ Download a separate copy for review:
 
 ```bash
 guidelines_file="$(mktemp)"
-curl -fsSL https://raw.githubusercontent.com/incline-ltd/coding-agent-guidelines/main/CLAUDE.md -o "$guidelines_file" &&
+curl -fsSL https://raw.githubusercontent.com/ashishkaloge/coding-agent-guidelines/main/CLAUDE.md -o "$guidelines_file" &&
   printf 'Downloaded for review: %s\n' "$guidelines_file"
 ```
 
@@ -137,7 +137,7 @@ for all supported skill locations.
 Install the plugin from the public GitHub repository:
 
 ```text
-/plugin marketplace add incline-ltd/coding-agent-guidelines
+/plugin marketplace add ashishkaloge/coding-agent-guidelines
 /plugin install coding-agent-guidelines@coding-agent-guidelines
 ```
 
@@ -227,18 +227,18 @@ malicious-instruction issue, see [SECURITY.md](SECURITY.md).
 
 ## Related Public Projects
 
-- [Agent Cost Guard](https://github.com/incline-ltd/agent-cost-guard):
+- [Agent Cost Guard](https://github.com/ashishkaloge/agent-cost-guard):
   instructions are text and an agent can ignore them; this local hook stops
   supported cloud-cost commands until a person approves
-- [Agent Policy Map](https://github.com/incline-ltd/agent-policy-map):
+- [Agent Policy Map](https://github.com/ashishkaloge/agent-policy-map):
   compares documented instruction discovery for the same file across Codex,
   Claude Code, Cursor, and GitHub Copilot
-- [Awesome Agent Instructions](https://github.com/incline-ltd/awesome-agent-instructions):
+- [Awesome Agent Instructions](https://github.com/ashishkaloge/awesome-agent-instructions):
   patterns and a skill for reviewing and simplifying coding-agent instructions
   while preserving project constraints
-- [Production Launch Prompts](https://github.com/incline-ltd/production-launch-prompts):
+- [Production Launch Prompts](https://github.com/ashishkaloge/production-launch-prompts):
   prompts and scorecards for checking whether software is ready to ship
-- [Awesome Agentic Engineering](https://github.com/incline-ltd/awesome-agentic-engineering):
+- [Awesome Agentic Engineering](https://github.com/ashishkaloge/awesome-agentic-engineering):
   a curated list of practical agent engineering resources
 
 ## License
