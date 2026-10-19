@@ -70,7 +70,7 @@ description match the task.
 Install from the public GitHub repository:
 
 ```text
-/plugin marketplace add incline-ltd/coding-agent-guidelines
+/plugin marketplace add ashishkaloge/coding-agent-guidelines
 /plugin install coding-agent-guidelines@coding-agent-guidelines
 ```
 
