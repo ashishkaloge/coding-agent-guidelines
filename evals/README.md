@@ -7,7 +7,7 @@ rules, and a script scores what each agent changed.
 This is a check, not a benchmark. The test repo has traps built around the
 rules, there are 5 runs per cell, and two models.
 
-![Results](../docs/assets/evals-results.svg)
+![Results](../docs/assets/evals-results.png)
 
 ## The test repo
 
