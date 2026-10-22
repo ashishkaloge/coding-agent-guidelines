@@ -325,3 +325,25 @@ but is not the right model for cross-cutting architecture work.
 Sonnet for the bulk of day-to-day coding. Opus when you have evidence
 it does measurably better on the specific task — typically large
 refactors, multi-step planning, or genuinely novel design.
+
+---
+
+## 13. Public method removed as dead code (§3)
+
+**Prompt:** "Remove the dead code from src/."
+
+**Wrong:** The agent searches the repo, finds no caller for
+`Cart.summary()`, and deletes it along with an unused debug helper. Tests
+and the build still pass. The README says the package is a library used by
+another service, so the method can have callers the repo cannot show. In
+the [evals](evals/README.md), Codex did this in 3 of 5 runs with v1.2 of
+these rules, and never without a rules file.
+
+**Right:** Search, then sort what you found. Remove private code with no
+callers. List exported or public code and ask:
+
+```text
+No callers in this repo: debugDump (src/util.js) and Cart.summary().
+Both are exported from a library, so other code may use them.
+Remove both, or only debugDump?
+```
