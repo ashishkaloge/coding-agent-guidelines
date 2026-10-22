@@ -42,7 +42,8 @@ changing and why.
 - Change only what the task needs. No unrelated reformatting, renames, or
   cleanup.
 - Do not delete code that looks unused until you have searched for its
-  callers, including tests, build scripts, and reflection.
+  callers, including tests, build scripts, and reflection. Exported or public
+  APIs can have callers outside the repo, so ask before removing them.
 - Match the surrounding style.
 - Keep necessary refactors within the requested scope. Get agreement before
   materially expanding that scope.
