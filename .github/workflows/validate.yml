@@ -22,3 +22,5 @@ jobs:
           node-version: 22
       - name: Validate repository
         run: node scripts/validate.mjs
+      - name: Check eval runner offline
+        run: python3 -I -B evals/test_run_ab.py

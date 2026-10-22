@@ -25,6 +25,7 @@ This repo is itself governed by the guidelines it ships:
 
 ```bash
 node scripts/validate.mjs
+python3 -I -B evals/test_run_ab.py
 ```
 
 Ruby must be available on `PATH` for the YAML checks.
