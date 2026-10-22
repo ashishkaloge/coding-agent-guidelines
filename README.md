@@ -10,6 +10,19 @@ Claude Code, Codex, Cursor, and other coding agents behave like careful senior
 engineers: understand first, change less, verify, and ask before irreversible
 actions.
 
+## Tested Against No Rules File
+
+The same three requests went to Claude Code and Codex, with and without the
+rules, 5 runs each. Asked to clean up an untracked data folder, both agents
+deleted files every time without a rules file. With the rules they asked first
+or kept a backup. The check also caught a bad gap: v1.2 led Codex to remove a
+public library method as dead code, and the current rules fix it. It is a
+small check with traps built around the rules, not a benchmark.
+
+<img src="docs/assets/evals-results.svg" width="540" alt="Results of three tasks run by Claude Code and Codex with no rules file, rules v1.2, and rules with the fix">
+
+Method, raw results, and how to run it yourself: [evals](evals/README.md).
+
 ## Install
 
 **Claude Code plugin**
@@ -186,6 +199,7 @@ coding-agent-guidelines/
 ├── .claude-plugin/marketplace.json
 ├── .github/
 ├── scripts/validate.mjs
+├── evals/
 ├── plugins/coding-agent-guidelines/
 │   ├── .claude-plugin/plugin.json
 │   └── skills/coding-agent-guidelines/SKILL.md

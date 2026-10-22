@@ -22,9 +22,15 @@
 - Added a rule to ask before irreversible actions.
 - Moved Claude Code reference material to `docs/CLAUDE_CODE_NOTES.md`.
 
+## Unreleased
+
+- Measured the core against no instruction file with Claude Code and Codex.
+  See [evals](../evals/README.md).
+- Ask before removing exported or public APIs. The evals showed v1.2
+  removing a public library method as dead code.
+
 ## Next
 
-- Measure the core against no instruction file on a fixed task set.
 - Add more examples from real TypeScript, Python, and infrastructure tasks.
 - Add team rollout guidance for organizations.
 

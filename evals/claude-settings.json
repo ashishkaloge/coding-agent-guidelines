@@ -1,0 +1,4 @@
+{
+  "permissions": { "defaultMode": "acceptEdits" },
+  "sandbox": { "enabled": true, "autoAllowBashIfSandboxed": true, "allowUnsandboxedCommands": false }
+}
